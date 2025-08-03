@@ -41,3 +41,26 @@ intern_dashboard/
 │ ├── leaderboard.html 
 │ └── logout.html 
 └── README.md 
+
+---
+
+**Setup Instructions**
+
+1. 📦 Clone the Repository
+git clone https://github.com/hasirsath/intern-dashboard.git
+cd intern-dashboard
+
+2. 🐍 Create a Virtual Environment (Recommended)  
+python -m venv venv
+venv\Scripts\activate  # For Windows
+# OR
+source venv/bin/activate  # For Mac/Linux
+
+3. 📥 Install Dependencies
+pip install -r requirements.txt
+
+4. 🚀 Run the Flask App
+python app.py
+
+The app will start running at:
+👉 http://127.0.0.1:5000
