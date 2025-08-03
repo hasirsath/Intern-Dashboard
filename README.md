@@ -31,15 +31,19 @@ A simple, full-stack intern dashboard built using **Flask** and **HTML/CSS/JS**,
 intern_dashboard/
 │
 ├── app.py 
+|
 ├── data/
-│ └── dummy_data.json 
+│ └── dummy_data.json
+|
 ├── static/
-│ └── style.css 
+│ └── style.css
+|
 ├── templates/
 │ ├── index.html 
 │ ├── dashboard.html 
 │ ├── leaderboard.html 
 │ └── logout.html 
+|
 └── README.md 
 
 ---
@@ -53,7 +57,6 @@ cd intern-dashboard
 2. 🐍 Create a Virtual Environment (Recommended)  
 python -m venv venv
 venv\Scripts\activate  # For Windows
-# OR
 source venv/bin/activate  # For Mac/Linux
 
 3. 📥 Install Dependencies
