@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Himani Sharma",
+    "referral_code": "himani2025",
+    "donations_raised": 27500,
+    "rewards": ["Certificate", "T-Shirt", "Early Access Badge"]
+  },
+  {
+    "name": "Aryan Mehta",
+    "referral_code": "aryan2025",
+    "donations_raised": 45000,
+    "rewards": ["Certificate", "Backpack", "Amazon Voucher"]
+  },
+  {
+    "name": "Sneha Patel",
+    "referral_code": "sneha2025",
+    "donations_raised": 20000,
+    "rewards": ["Certificate"]
+  }
+]

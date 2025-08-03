@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intern Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Hello, {{ data.name }}</h1>
+        <p><strong>Referral Code:</strong> {{ data.referral_code }}</p>
+        <p><strong>Total Donations Raised:</strong> ₹{{ data.donations_raised }}</p>
+
+        <h3>Rewards & Unlockables</h3>
+        <ul>
+            {% for reward in data.rewards %}
+                <li>{{ reward }}</li>
+            {% endfor %}
+        </ul>
+
+        <a href="/leaderboard" class="button">View Leaderboard</a><br>
+        <a href="/logout" class="button red" style="background: #e74c3c;">Logout</a>
+
+    </div>
+</body>
+</html>

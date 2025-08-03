@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="leaderboard">
+        <h1>Top Interns Leaderboard</h1>
+        <ol id="leaderboardList">Loading...</ol>
+        <a href="/dashboard" class="button">Back to Dashboard</a><br>
+        <a href="/logout" class="button red" style="background: #e74c3c;">Logout</a>
+
+    </div>
+
+    <script>
+        fetch("/api/users")
+            .then(response => response.json())
+            .then(users => {
+                users.sort((a, b) => b.donations_raised - a.donations_raised);
+                const list = document.getElementById("leaderboardList");
+                list.innerHTML = "";
+                users.forEach(user => {
+                    const li = document.createElement("li");
+                    li.textContent = `${user.name} – ₹${user.donations_raised}`;
+                    list.appendChild(li);
+                });
+            });
+    </script>
+</body>
+</html>
